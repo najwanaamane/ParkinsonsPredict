@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Enter values{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+
+<body>
+    <h1 class="display-4">Please fill in the form</h1>
+
+    {% block content %}
+        <form method="post" action="{{ url_for('index') }}">
+            {% for column in columns %}
+                <label for="{{ column }}">Value for "{{ column }}" :</label>
+                <input type="number" step="any" id="{{ column }}" name="{{ column }}" required><br><br>
+            {% endfor %}
+            <input type="submit" value="Predict">
+        </form>
+    {% endblock %}
+</body>
+
+</html>

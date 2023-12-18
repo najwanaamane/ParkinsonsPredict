@@ -1,0 +1,34 @@
+<!-- templates/prediction.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Prediction Results{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='prediction.css') }}">
+</head>
+
+<body>
+    {% block content %}
+        <h1 class="display-4">Prediction Results</h1>
+        <p>Motor UPDRS: {{ data[0] }}</p>
+        <p>Total UPDRS: {{ data[1] }}</p>
+        {% if data[0] <= 20 %}
+            <div class="healthy-box">
+                <p>Interpretation: Healthy (No Parkinson's)</p>
+            </div>
+        {% elif data[0] > 20 and data[0] <= 40 %}
+            <div class="mild-box">
+                <p>Interpretation: Mild to Moderate Severity Parkinson's</p>
+            </div>
+        {% else %}
+            <div class="severe-box">
+                <p>Interpretation: High Severity (Severe)</p>
+            </div>
+        {% endif %}
+        <a class="btn btn-primary btn-lg" href="{{ url_for('index') }}" role="button">Back to Input</a>
+    {% endblock %}
+</body>
+
+</html>

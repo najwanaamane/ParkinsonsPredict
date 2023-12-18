@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Welcome to Parkinson's Disease Predictor{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body class="landing-page">
+    <div class="landing-content">
+        {% block content %}
+            <h1 class="display-4">Welcome to your Parkinson's Disease Predictor</h1>
+            <p class="lead">This is an AI model with a deep learning approach for medical professionals to predict UPDRS test results.</p>
+            <div class="button-container">
+                <a class="btn btn-primary btn-lg" href="{{ url_for('index') }}" role="button">Get Started</a>
+            </div>
+        {% endblock %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("BG.jpg");
+    background-size: cover;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.display-4 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: silver;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    background-color: silver;
+}
+
+.btn-primary:hover {
+    background-color: #ccc;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.fa-arrow-left:before {
+    content: "\f060";
+    margin-right: 5px;
+    font-family: "Font Awesome 5 Free";
+}
+
+.healthy-box,
+.mild-box,
+.severe-box {
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.healthy-box {
+    background-color: rgba(0, 255, 0, 0.3); 
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.mild-box {
+    background-color: rgba(255, 165, 0, 0.3); 
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.severe-box {
+    background-color: rgba(255, 0, 0, 0.3); 
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+/*  Responsive Design */
+
+@media screen and (max-width: 600px) {
+    .healthy-box,
+    .mild-box,
+    .severe-box {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
