@@ -6,6 +6,10 @@ This repository offers various machine learning approaches to predict the progre
 
 The dataset used for training and testing the models is `parkinsons_updrs.data`. This dataset contains clinical measurements and assessments related to Parkinson's disease progression.  
 
+This **Oxford Parkinson's Disease dataset**, which comprises 5,875 voice recordings from 42 individuals, was collected over a six-month trial period, these data aim to predict motor and total UPDRS scores using biomedical vocal measurements. Subject information includes age, gender, and time since recruitment. Key measures such as Jitter and Shimmer are crucial for assessing vocal variations. Developed in collaboration with medical centers and Intel, this dataset enables accurate telemonitoring of Parkinson's disease progression through non-invasive speech tests.
+
+For preprocessing, we implemented several steps, including data normalization to scale all features equally, promoting fast model convergence.
+
 **Dataset Sample**  
 
 ![dddddddddd](https://github.com/najwanaamane/ParkinsonPredict/assets/86806375/aa8149b8-c07f-49f0-9348-be6678dc406b)  
@@ -97,7 +101,7 @@ The decision tree and neural network models demonstrated superior performance in
 
 **Running the Models:**
 - Load the dataset using pandas and preprocess it as needed.
-- Train and evaluate different models by running the jupyter notebook (`ALL_algo.ipynb`, `Neural_prediction_parkinsons.ipynb`, .
+- Train and evaluate different models by running the jupyter notebook (`ALL_algo.ipynb`, `Neural_prediction_parkinsons.ipynb`) .
 - Tune hyperparameters using GridSearchCV for optimal performance.
 
 
