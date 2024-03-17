@@ -101,7 +101,7 @@ The decision tree and neural network models demonstrated superior performance in
 
 **Running the Models:**
 - Load the dataset using pandas and preprocess it as needed.
-- Train and evaluate different models by running the jupyter notebook (`ALL_algo.ipynb`, `Neural_prediction_parkinsons.ipynb`) .
+- Train and evaluate different models by running the jupyter notebook (`ALL_algo.ipynb`, `Neural_prediction_parkinsons.ipynb`) from the directory `TrainedModel` .
 - Tune hyperparameters using GridSearchCV for optimal performance.
 
 
