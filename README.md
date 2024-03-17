@@ -58,7 +58,7 @@ The strategy of evaluation relies on metrics specifically adapted to our chosen 
 
 - **RMSE (Root Mean Square Error):** Measures the average of the squared differences between the predicted and actual values. A lower RMSE indicates better accuracy.
 - **MAE (Mean Absolute Error):** Measures the average of the absolute differences between the predicted and actual values. A lower MAE indicates better accuracy.
-- **Correlation:** Evaluates the linear relationship between predictions and actual values. A strong positive correlation suggests that our models can capture general trends in the Parkinson's disease-related dataset.
+- **MSE (Mean Squared Error): Measures the average of the squared differences between the predicted and actual values. A lower MSE indicates better accuracy.
 - **R² (Coefficient of Determination):** Evaluates the proportion of variance in the output data explained by our models. A higher R² suggests a strong fit and the model's ability to explain a significant portion of data variability.
 
 ### Model Performance Table
@@ -81,14 +81,14 @@ The decision tree excels with an exceptional R² of 0.92, demonstrating strong a
 Linear regression shows modest performance (R² of 0.13), indicating it struggles to capture the complexity of the data.
 Neural networks offer solid results with an R² of 0.81, highlighting their ability to model nonlinear relationships.
 
-### Discussion on Unexpected Results: Surprising or Hard-to-Interpret Elements
+### Discussion on Unexpected Results: Interpretations
 
-The low performance of the SVM model may be attributed to its sensitivity to parameters and the need for optimization.
+The low performance of the SVM model may be attributed to its sensitivity to parameters and the need for optimization(MultiOutputRegressor).
 Linear regression, while straightforward, may lack the capacity to model complex relationships present in the data.
 
 ### Conclusion
 
-The decision tree and neural network models demonstrated superior performance in this benchmark model selection. Among these models, the neural network (ANN) showcased the best performance with an R² of 0.81. Therefore, the neural network model was chosen for deployment in the Flask application (`model_flask.py`).
+The decision tree and neural network models demonstrated superior performance in this benchmark model selection. Among these models, the neural network (ANN) was then chosen for deployment in the Flask application (`model_flask.py`).
 
 ### Usage
 
