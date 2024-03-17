@@ -106,6 +106,3 @@ The decision tree and neural network models demonstrated superior performance in
 
 
 
-### Conclusion
-
-This repository provides a comprehensive toolkit for predicting Parkinson's disease progression using machine learning. By leveraging various algorithms and optimization techniques, it aims to contribute to the advancement of predictive modeling in healthcare, facilitating early detection and personalized treatment strategies for patients with Parkinson's disease. The decision tree and neural network models demonstrated superior performance and were further deployed in a Flask application for real-world use.
